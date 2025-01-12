@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable & Subject Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: left;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px; 
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #b3f2d1; /* Light green for headers */
+            color: #000;
+            font-weight: bold;
+        }
+        tr:nth-child(odd) td {
+            background-color: #f9fdfc; /* Light white */
+        }
+        tr:nth-child(even) td {
+            background-color: #e6f7f1; /* Light green */
+        }
+        .highlight {
+            background-color: #d9f0e1; /* Slight highlight */
+            font-weight: bold;
+        }
+        .empty {
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Time Table Section -->
+    <h2>Time Table</h2>
+    <table>
+        <tr>
+            <th>WEEKDAY</th>
+            <th>08:00 to 08:50</th>
+            <th>09:00 to 09:50</th>
+            <th>10:00 to 10:50</th>
+            <th>11:00 to 11:50</th>
+            <th>12:00 to 12:50</th>
+            <th>13:00 to 13:50</th>
+            <th>14:00 to 14:50</th>
+            <th>15:00 to 15:50</th>
+            <th>16:00 to 16:50</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td class="highlight">CSEN2031</td>
+            <td>CSEN3071</td>
+            <td>CSEN4211</td>
+            <td>CSEN2071</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td >24CSEN1081</td>
+            <td  >24CSEN1081</td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>CSEN4211</td>
+            <td>CSEN2031</td>
+            <td>CSEN3031P</td>
+            <td>CSEN3031P</td>
+            <td>EECE4181</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>CSEN3071P</td>
+            <td>CSEN3071P</td>
+            <td>CSEN3031</td>
+            <td>CSEN2071</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td>EECE4181</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>CSEN3031</td>
+            <td>CSEN4211</td>
+            <td>CLAD2031</td>
+            <td>CLAD2031</td>
+            <td>EECE4181</td>
+            <td class="empty"></td>
+            <td>CSEN3071</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>CSEN2071</td>
+            <td>CSEN3031</td>
+            <td>CSEN2031P</td>
+            <td>CSEN2031P</td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td>CSEN3071</td>
+            <td>CSEN2031</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+
+    <!-- Subject Details Section -->
+    <h2>Subject Details</h2>
+    <table>
+        <tr>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+            <th>Subject Faculty</th>
+            <th>Building/Room Number</th>
+        </tr>
+        <tr>
+            <td>24CSEN1081</td>
+            <td>Intermediate Coding-II</td>
+            <td>Sirasapalli Joshua Johnson</td>
+            <td>ICT/317</td>
+        </tr>
+        <tr>
+            <td>CLAD2031</td>
+            <td>Preparation For Campus Placement-2 (Soft Skills 6A)</td>
+            <td>FACULTY 2</td>
+            <td>ICT / 318</td>
+        </tr>
+        <tr>
+            <td>CSEN2031</td>
+            <td>Artificial Intelligence</td>
+            <td>Kollati Vijaya Kumar</td>
+            <td>ICT / 323</td>
+        </tr>
+        <tr>
+            <td>CSEN2031P</td>
+            <td>Artificial Intelligence Lab</td>
+            <td>Kollati Vijaya Kumar</td>
+            <td>ICT / 513</td>
+        </tr>
+        <tr>
+            <td>CSEN2071</td>
+            <td>Cryptography and Network Security</td>
+            <td>Chandra Sekhar Potala</td>
+            <td>ICT / 324</td>
+        </tr>
+        <tr>
+            <td>CSEN3071</td>
+            <td>Web Application Development and Software Frameworks</td>
+            <td>K Bhargav</td>
+            <td>ICT / 318</td>
+        </tr>
+        <tr>
+            <td>CSEN3071P</td>
+            <td>Web Application Development and Software Frameworks Lab</td>
+            <td>K Bhargav</td>
+            <td>ICT / 513</td>
+        </tr>
+        <tr>
+            <td>CSEN3031P</td>
+            <td>Compiler Design Lab</td>
+            <td>Chalamasetty Sai Pratheek</td>
+            <td>ICT / 513</td>
+        </tr>
+        <tr>
+            <td>CSEN4211</td>
+            <td>Introduction To Quantum Computing</td>
+            <td>Chagamreddy Venkata Koti Reddy</td>
+            <td>ICT / 305</td>
+        </tr>
+        <tr>
+            <td>EECE4181</td>
+            <td>Self-Driving Vehicle Technology</td>
+            <td>Sri Kondaji Aravind Kumark</td>
+            <td>ICT / 418</td>
+        </tr>
+    </table>
+</body>
+</html>
